@@ -11,6 +11,12 @@
 
 
     <body>
+
+        <header>
+            <button id="high-score">High Scores</button>
+            <p id="timer">Countdown Timer</p>
+        </header>
+
     <div id="body">
     <h1> 
         Coding Quiz Challenge
@@ -24,17 +30,38 @@
         
 
 
-        <h2 id="button"> Click Here to Start</h2>
+        <h2 id="start"> Click Here to Start</h2>
     </div> 
-        <div>
+        <div id="test">
             <p id="question">question</p>
-            <button class="button">answer 1</button>
-            <button class="button">answer 2</button>
-            <button class="button">answer 3</button>
-            <button class="button">answer4</button>
-            <button class="button">answer 5</button>
+            <button id="button1">Answer 1</button>
+            <button id="button2">Answer 2</button>
+            <button id="button3">Answer 3</button>
+            <button id="next">Next</button>
         </div>
 
-        <script src="" async defer></script>
+        
+        <div id="game-over">
+            
+            <h3 id="over">
+              Game Over!
+            </h3>
+            <p id="score">
+                Your final score is:
+            </p>
+            <p id="initials">
+                Enter Initials:
+            </p>
+        </div>
+        
+        <form>
+            <div>
+              <label for="initials">Initials</label>
+              <input type="text" name="Initials" id="Initials" placeholder="A.B." />
+            </div>
+            <button id="save">Save</button>
+        </form>
+    
+        <script src="script.js" async defer></script>
     </body>
 </html>
