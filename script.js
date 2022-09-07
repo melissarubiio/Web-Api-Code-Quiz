@@ -17,7 +17,7 @@ clickHere.addEventListener("click", function() {
 });
 
 clickHere.addEventListener("click", function() {
-    questionaire.style.display = "none"
+    questionaire.style.display = "block"
 });
 
 clickHere.addEventListener("click", function() {
@@ -64,10 +64,10 @@ const Questions = [{
     }
     ]
 
-clickHere.addEventListener ("click", function(){
+clickHere.addEventListener ("click", function() {
         iterate("0");
     });
-    
+
     function iterate(id) {
         var quiz = document.getElementsByClassName ("quiz");
         quiz[0].innerText = "";
@@ -91,37 +91,38 @@ clickHere.addEventListener ("click", function(){
         var selected = "";
     
         button1.addEventListener("click", () => {
-            button1.style.backgroundColor ="lightskyblue" ;
-            button2.style.backgroundColor = "lightgoldenrodyellow";
-            button3.style.backgroundColor = "lightskyblue";
+            if(button1.style.backgroundColor == "var(--sage)"){
+                button1.style.backgroundColor = "white"
+                return
+            }
+            button1.style.backgroundColor ="var(--sage)" ;
             selected = button1.value;
         })
       
-        // Show selection for op2
         button2.addEventListener("click", () => {
-            button1.style.backgroundColor = "red";
-            button2.style.backgroundColor = "green";
-            button3.style.backgroundColor = "red";
+            if(button2.style.backgroundColor == "var(--sage)"){
+                button2.style.backgroundColor = "white"
+                return
+            }
+            button2.style.backgroundColor = "var(--sage)";
             selected = button2.value;
         })
       
-        // Show selection for op3
         button3.addEventListener("click", () => {
-            op1.style.backgroundColor = "red";
-            op2.style.backgroundColor = "red";
-            op3.style.backgroundColor = "green";
+            if(button3.style.backgroundColor == "var(--sage)"){
+                button3.style.backgroundColor = "white"
+                return
+            }
+            button3.style.backgroundColor = "var(--sage)";
             selected = button3.value;
         })
         const submit = document.getElementsByClassName("submit");
       
-        // Evaluate method
         submit[0].addEventListener("click", () => {
             if (selected == "true") {
-                result[0].innerHTML = "True";
-                result[0].style.color = "green";
+                document.getElementById ("t-f").textContent = "true";
             } else {
-                result[0].innerHTML = "False";
-                result[0].style.color = "red";
+                document.getElementById ("t-f").textContent = "false";
             }
         })
         console.log(id)
