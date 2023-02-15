@@ -11,7 +11,7 @@ This app is an interactive code quiz that allows the user to answer a series of 
 ![alt quetsions](/images/questions-ss.png)
 ![alt gameover](/images/gameover-ss.png)
 ## Links
-Deployed Link: [alt website-link](https://melissarubiio.github.io/Web-Api-Code-Quiz/)
-Deployed Link: [alt website-link](https://github.com/melissarubiio/Web-Api-Code-Quiz)
+- [Deployed Website Link](https://melissarubiio.github.io/Web-Api-Code-Quiz/)
+- [Github Link](https://github.com/melissarubiio/Web-Api-Code-Quiz)
 ## Username
 GitHub Username: [melissarubiio](https://github.com/melissarubiio)
