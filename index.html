@@ -13,7 +13,7 @@
     <body>
 
         <header>
-            <button id="high-score">High Scores</button>
+            <a href= highscore.html><button> High Scores</button></a>
             <p id="timer">Countdown Timer</p>
         </header>
 
@@ -52,27 +52,19 @@
                 <button class="next">Next</button>
             </div>
         </div>
-        
+
         <div id="game-over">
-            
-            <h3 id="over">
-              Game Over!
-            </h3>
-            <p id="score">
-                Your final score is:
-            </p>
-            <p id="initials">
-                Enter Initials:
-            </p>
+            <h4 id=over>Game Over</h4>
+            <p>Thank you for playing! Enter your initials here to store your score.</p>
+                <form id="form">
+                    <div>
+                      <label for="initials">Initials</label>
+                      <input type="text" name="Initials" id="Initials" placeholder="A.B." />
+                    </div>
+                    <button id="save">Save</button>
+                </form>
+                <div id="score">score</div>
         </div>
-        
-        <form id="form">
-            <div>
-              <label for="initials">Initials</label>
-              <input type="text" name="Initials" id="Initials" placeholder="A.B." />
-            </div>
-            <button id="save">Save</button>
-        </form>
     
         <script src="script.js" async defer></script>
     </body>
